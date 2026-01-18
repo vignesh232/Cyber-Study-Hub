@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Study Hub 2026 | Vignesh</title>
+
+<style>
+:root {
+  --primary:#0d6efd;
+  --dark:#0b1320;
+  --light:#f4f6f9;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--light);
+  color:#222;
+}
+header {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
+header h1 { margin:0; font-size:2.2rem; }
+header p { max-width:900px; margin:10px auto 0; opacity:.95; }
+
+.container {
+  max-width:1200px;
+  margin:30px auto;
+  padding:20px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+section { margin-bottom:50px; }
+h2 {
+  color:var(--primary);
+  border-bottom:3px solid #e9ecef;
+  padding-bottom:10px;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+.card {
+  background:#f9fafc;
+  border-radius:10px;
+  padding:20px;
+  border:1px solid #e5e7eb;
+}
+.card b { display:block; margin-bottom:6px; }
+.tag {
+  display:inline-block;
+  background:#e7f1ff;
+  color:#0d6efd;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+/* CHATBOT */
+#chat-toggle {
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:var(--primary);
+  color:#fff;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+  z-index:1000;
+}
+#chatbot {
+  position:fixed;
+  bottom:90px;
+  right:25px;
+  width:360px;
+  max-height:520px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 15px 40px rgba(0,0,0,.25);
+  display:none;
+  flex-direction:column;
+  overflow:hidden;
+}
+#chatbot.active { display:flex; }
+#chat-header {
+  background:var(--primary);
+  color:#fff;
+  padding:14px;
+  font-weight:600;
+  display:flex;
+  justify-content:space-between;
+}
+#chat-messages {
+  flex:1;
+  padding:15px;
+  overflow-y:auto;
+  background:#f4f6f9;
+}
+.message {
+  margin-bottom:10px;
+  padding:10px 14px;
+  border-radius:18px;
+  max-width:85%;
+  line-height:1.4;
+}
+.user { background:#0d6efd; color:#fff; margin-left:auto; }
+.bot { background:#e5e7eb; }
+#chat-input-box {
+  padding:10px;
+  border-top:1px solid #e5e7eb;
+  display:flex;
+  gap:8px;
+}
+#chat-input {
+  flex:1;
+  padding:10px;
+  border-radius:20px;
+  border:1px solid #ccc;
+}
+#send {
+  background:var(--primary);
+  border:none;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:20px;
+  cursor:pointer;
+}
+footer {
+  text-align:center;
+  padding:20px;
+  color:#666;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🛡️ Cyber Study Hub 2026</h1>
+  <p>
+    A curated cybersecurity learning hub for Vignesh (Ahmedabad) —  
+    tools, courses, certifications, trends, and an AI cyber assistant.
+  </p>
+</header>
+
+<div class="container">
+
+<section>
+<h2>🎓 Online Courses & Platforms</h2>
+<div class="grid">
+  <div class="card"><span class="tag">Hands-on</span><b>TryHackMe</b>Beginner → Advanced cyber labs</div>
+  <div class="card"><span class="tag">Advanced</span><b>Hack The Box Academy</b>Red / Blue team paths</div>
+  <div class="card"><span class="tag">Theory</span><b>Coursera / edX</b>University-grade security courses</div>
+  <div class="card"><span class="tag">Bug Bounty</span><b>PortSwigger Web Security Academy</b>Best web attacks training</div>
+</div>
+</section>
+
+<section>
+<h2>🛠️ Cybersecurity Tools (2026)</h2>
+<div class="grid">
+  <div class="card"><b>Nmap</b>Network discovery & attack surface mapping</div>
+  <div class="card"><b>Burp Suite</b>Web app testing & API security</div>
+  <div class="card"><b>Wireshark</b>Packet analysis & incident response</div>
+  <div class="card"><b>Splunk / ELK</b>SOC monitoring & SIEM</div>
+</div>
+</section>
+
+<section>
+<h2>📈 2026 Cybersecurity Trends</h2>
+<ul>
+  <li>✔ AI-driven attacks & defenses</li>
+  <li>✔ Cloud & Kubernetes security</li>
+  <li>✔ API & supply-chain attacks</li>
+  <li>✔ Zero Trust adoption</li>
+  <li>✔ OT / IoT security growth</li>
+</ul>
+</section>
+
+<section>
+<h2>📜 Certifications Roadmap</h2>
+<div class="grid">
+  <div class="card"><b>CompTIA Security+</b>Foundation security knowledge</div>
+  <div class="card"><b>CEH</b>Ethical hacking fundamentals</div>
+  <div class="card"><b>OSCP</b>Advanced penetration testing</div>
+  <div class="card"><b>AZ-500</b>Azure security engineer</div>
+</div>
+</section>
+
+<section>
+<h2>🌐 Free Resources & Communities</h2>
+<ul>
+  <li>OWASP Top 10 & Cheat Sheets</li>
+  <li>GitHub Awesome-Cybersecurity</li>
+  <li>Reddit: r/netsec, r/blueteamsec</li>
+  <li>Discord & CTF communities</li>
+</ul>
+</section>
+
+</div>
+
+<!-- CHATBOT -->
+<div id="chat-toggle" onclick="toggleChat()">💬</div>
+
+<div id="chatbot">
+  <div id="chat-header">
+    Cyber AI Assistant
+    <span onclick="toggleChat()" style="cursor:pointer;">✕</span>
+  </div>
+  <div id="chat-messages">
+    <div class="message bot">
+      Hello Vignesh 👋  
+      I’m your Cyber Study Assistant.  
+      Ask about SQLi, XSS, SOC roles, tools, certs, or career paths.
+    </div>
+  </div>
+  <div id="chat-input-box">
+    <input id="chat-input" placeholder="Ask a cyber question…">
+    <button id="send" onclick="sendMsg()">Send</button>
+  </div>
+</div>
+
+<footer>
+© 2026 Cyber Study Hub | Educational & Ethical Use Only
+</footer>
+
+<script>
+/* =============================
+   SAFE MODE (DEFAULT)
+   ============================= */
+
+// 🔐 DO NOT PUT REAL API KEYS IN HTML
+// If you want Grok API later:
+// const GROK_API_KEY = "YOUR_API_KEY";
+// const API_URL = "https://api.x.ai/v1/chat/completions";
+
+function toggleChat(){
+  document.getElementById("chatbot").classList.toggle("active");
+}
+
+function sendMsg(){
+  const input=document.getElementById("chat-input");
+  const text=input.value.trim();
+  if(!text) return;
+
+  addMsg(text,"user");
+  input.value="";
+
+  setTimeout(()=>{
+    addMsg(getOfflineReply(text),"bot");
+  },600);
+}
+
+function addMsg(text,type){
+  const div=document.createElement("div");
+  div.className="message "+type;
+  div.innerHTML=text;
+  const box=document.getElementById("chat-messages");
+  box.appendChild(div);
+  box.scrollTop=box.scrollHeight;
+}
+
+function getOfflineReply(q){
+  q=q.toLowerCase();
+  if(q.includes("sqli")) return "SQL Injection allows attackers to manipulate backend queries. Always use parameterized queries and ORM.";
+  if(q.includes("xss")) return "XSS occurs when untrusted input is rendered as HTML. Use output encoding & CSP.";
+  if(q.includes("career")) return "Start with SOC Analyst → Blue Team → specialize in Cloud or DFIR.";
+  if(q.includes("tools")) return "Learn Nmap, Burp, Splunk, Wireshark, and Cloud security tools.";
+  return "That’s a great question. Focus on fundamentals, hands-on labs, and certifications in 2026.";
+}
+</script>
+
+</body>
+</html>
